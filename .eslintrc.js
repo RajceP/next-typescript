@@ -38,8 +38,8 @@ module.exports = {
             allowConciseArrowFunctionExpressionsStartingWithVoid: true,
           },
         ],
-        'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Includes .prettierrc.js rules
+        'prettier/prettier': ['error', { semi: true }, { usePrettierrc: true }], // Includes .prettierrc.js rules
       },
     },
   ],
-}
+};

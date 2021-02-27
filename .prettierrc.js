@@ -1,11 +1,20 @@
 module.exports = {
   // Change your rules accordingly to your coding style preferencies.
   // https://prettier.io/docs/en/options.html
-  semi: false,
-  trailingComma: 'es5',
-  singleQuote: true,
-  printWidth: 100,
-  tabWidth: 2,
-  useTabs: false,
+  arrowParens: 'always',
+  bracketSpacing: true,
+  htmlWhitespaceSensitivity: 'css',
+  insertPragma: false,
   jsxBracketSameLine: false,
-}
+  jsxSingleQuote: false,
+  printWidth: 100,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  requirePragma: false,
+  semi: true,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'all',
+  useTabs: false,
+  endOfLine: 'auto',
+};
