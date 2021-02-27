@@ -14,10 +14,6 @@
       "request": "launch",
       "name": "Next: Node",
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/next",
-      "runtimeArgs": ["-p", "3000"],
-      "env": {
-        "NODE_OPTIONS": "--inspect=5622"
-      },
       "console": "integratedTerminal"
     }
   ],
