@@ -1,5 +1,4 @@
 import { GetServerSideProps, NextPage } from 'next';
-
 interface Props {
   launch: {
     mission: string;
@@ -12,12 +11,14 @@ interface Props {
 const IndexPage: NextPage<Props> = ({ launch }) => {
   const date = new Date(launch.timestamp);
   return (
-    <main>
-      <h1>Next SpaceX Launch: {launch.mission}</h1>
-      <p>
-        {launch.rocket} will take off from {launch.site} on {date.toDateString()}
-      </p>
-    </main>
+    <div className="container mx-auto flex justify-center align-middle">
+      <div className="min-w-0 max-w-lg m-4 p-4 text-black border border-solid border-gray-400 rounded-lg shadow-xs">
+        <h4 className="mb-4 font-semibold"> Next SpaceX Launch: {launch.mission}</h4>
+        <p>
+          {launch.rocket} will take off from {launch.site} on {date.toDateString()}
+        </p>
+      </div>
+    </div>
   );
 };
 
