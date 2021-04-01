@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import IndexPage from '../pages';
+import IndexPage from '../src/pages';
 
 describe('Index page', () => {
   it('should match the snapshot', () => {
