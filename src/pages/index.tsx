@@ -11,18 +11,19 @@ interface Props {
 const IndexPage: NextPage<Props> = ({ launch }) => {
   const date = new Date(launch.timestamp);
   return (
-    <div className="container mx-auto flex justify-center align-middle">
-      <div className="min-w-0 max-w-lg m-4 p-4 text-black border border-solid border-gray-400 rounded-lg shadow-xs">
-        <h4 className="mb-4 font-semibold"> Next SpaceX Launch: {launch.mission}</h4>
+    <div className="container flex justify-center mx-auto align-middle">
+      <div className="max-w-lg min-w-0 p-4 m-4 text-black border border-gray-400 border-solid rounded-lg shadow-xs">
+        <h4 className="mb-4 font-semibold">
+          Next SpaceX Launch: {launch.mission}
+        </h4>
         <p>
-          {launch.rocket} will take off from {launch.site} on {date.toDateString()}
+          {launch.rocket} will take off from {launch.site} on{' '}
+          {date.toDateString()}
         </p>
       </div>
     </div>
   );
 };
-
-export default IndexPage;
 
 /*
  * More information about getServerSideProps:
@@ -43,3 +44,5 @@ export const getServerSideProps: GetServerSideProps<Props> = async () => {
     },
   };
 };
+
+export default IndexPage;
