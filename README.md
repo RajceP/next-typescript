@@ -6,14 +6,14 @@ Starter code for a clean Next.js + Tailwind + TypeScript + ESLint project.
 
 ```sh
 # Install dependencies
-yarn
+npm install
 
 # Start dev server
-yarn dev
+npm dev
 
 # Start tests (or yarn test --watch for watch mode)
-yarn test
+npm test
 
 # Lint (the dot is important)
-yarn lint .
+npm lint .
 ```
