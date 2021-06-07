@@ -38,8 +38,13 @@ module.exports = {
             allowConciseArrowFunctionExpressionsStartingWithVoid: true,
           },
         ],
-        'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Includes .prettierrc.js rules
+        'prettier/prettier': ['error', {}, { usePrettierrc: true }],
       },
+    },
+    {
+      env: { jest: true },
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:jest-dom/recommended', 'plugin:testing-library/react'],
     },
   ],
 };
