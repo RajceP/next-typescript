@@ -1,5 +1,6 @@
 module.exports = {
   roots: ['<rootDir>'],
+  moduleDirectories: ['node_modules', 'src'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json', 'jsx'],
   testPathIgnorePatterns: [
     '<rootDir>[/\\\\](node_modules|.next|.vscode)[/\\\\]',
@@ -13,7 +14,7 @@ module.exports = {
     'jest-watch-typeahead/testname',
   ],
   moduleNameMapper: {
-    '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
-    '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__mocks__/fileMock.js',
+    '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$':
+      'identity-obj-proxy',
   },
 };

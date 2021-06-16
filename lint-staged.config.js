@@ -8,5 +8,6 @@ module.exports = {
     'pretty-quick --staged',
     'eslint --fix',
     `pnpm run lint ${filenames.join(' ')}`,
+    'pnpm next lint',
   ],
 };
