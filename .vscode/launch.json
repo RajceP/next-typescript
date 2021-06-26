@@ -3,7 +3,7 @@
   "configurations": [
     {
       "type": "pwa-chrome",
-      "runtimeExecutable": "/Applications/Brave Browser Nightly.app/Contents/MacOS/Brave Browser Nightly",
+      "runtimeExecutable": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
       "request": "launch",
       "name": "Next: Chrome",
       "url": "http://localhost:3000",

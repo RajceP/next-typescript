@@ -17,10 +17,6 @@ const IndexPage: NextPage<Props> = ({ launch }) => {
   );
 };
 
-/*
- * More information about getServerSideProps:
- * https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering
- */
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const response = await fetch('https://api.spacexdata.com/v3/launches/next');
   const nextLaunch = await response.json();
